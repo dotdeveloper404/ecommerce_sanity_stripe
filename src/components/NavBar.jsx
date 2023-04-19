@@ -6,6 +6,7 @@ import { useStateContext } from "@/context/StateContext";
 const NavBar = () => {
   const {showCart,setShowCart,totalQuantities} = useStateContext();
   return (
+    <>
     <div className="navbar-container">
       <p className="logo">
         <Link href="/">JSM Headphones</Link>
@@ -17,6 +18,7 @@ const NavBar = () => {
       {/* if show cart is true then cart will open otherwise it will hide  */}
       {showCart && <Cart/>}
     </div>
+    </>
   );
 };
 
